@@ -1,7 +1,7 @@
 <template>
   <div class="result-container">
     <div class="title-wrap">
-      <h2 class="title">李荣浩</h2>
+      <h2 class="title">{{ $route.query.q}}</h2>
       <span class="sub-title">找到985个结果</span>
     </div>
     <el-tabs v-model="activeIndex">
@@ -44,7 +44,6 @@
               <td>你要相信这不是最后一天</td>
               <td>06:03</td>
             </tr>
-
           </tbody>
         </table>
       </el-tab-pane>
@@ -56,7 +55,7 @@
                 播放量:
                 <span class="num">66892</span>
               </div>
-              <img src="../assets/cover.jpg" alt="" />
+              <img src="../assets/cover.jpg" alt />
               <span class="iconfont icon-play"></span>
             </div>
             <p class="name">编辑推荐：一起探索这个未知的音乐罐头吧！</p>
@@ -67,7 +66,7 @@
                 播放量:
                 <span class="num">66892</span>
               </div>
-              <img src="../assets/cover.jpg" alt="" />
+              <img src="../assets/cover.jpg" alt />
               <span class="iconfont icon-play"></span>
             </div>
             <p class="name">编辑推荐：一起探索这个未知的音乐罐头吧！</p>
@@ -78,7 +77,7 @@
                 播放量:
                 <span class="num">66892</span>
               </div>
-              <img src="../assets/cover.jpg" alt="" />
+              <img src="../assets/cover.jpg" alt />
               <span class="iconfont icon-play"></span>
             </div>
             <p class="name">编辑推荐：一起探索这个未知的音乐罐头吧！</p>
@@ -89,7 +88,7 @@
                 播放量:
                 <span class="num">66892</span>
               </div>
-              <img src="../assets/cover.jpg" alt="" />
+              <img src="../assets/cover.jpg" alt />
               <span class="iconfont icon-play"></span>
             </div>
             <p class="name">编辑推荐：一起探索这个未知的音乐罐头吧！</p>
@@ -100,7 +99,7 @@
                 播放量:
                 <span class="num">66892</span>
               </div>
-              <img src="../assets/cover.jpg" alt="" />
+              <img src="../assets/cover.jpg" alt />
               <span class="iconfont icon-play"></span>
             </div>
             <p class="name">编辑推荐：一起探索这个未知的音乐罐头吧！</p>
@@ -111,7 +110,7 @@
         <div class="items mv">
           <div class="item">
             <div class="img-wrap">
-              <img src="../assets/mvCover.jpg" alt="" />
+              <img src="../assets/mvCover.jpg" alt />
               <span class="iconfont icon-play"></span>
               <div class="num-wrap">
                 <div class="iconfont icon-play"></div>
@@ -126,7 +125,7 @@
           </div>
           <div class="item">
             <div class="img-wrap">
-              <img src="../assets/mvCover.jpg" alt="" />
+              <img src="../assets/mvCover.jpg" alt />
               <span class="iconfont icon-play"></span>
               <div class="num-wrap">
                 <div class="iconfont icon-play"></div>
@@ -141,7 +140,7 @@
           </div>
           <div class="item">
             <div class="img-wrap">
-              <img src="../assets/mvCover.jpg" alt="" />
+              <img src="../assets/mvCover.jpg" alt />
               <span class="iconfont icon-play"></span>
               <div class="num-wrap">
                 <div class="iconfont icon-play"></div>
@@ -156,7 +155,7 @@
           </div>
           <div class="item">
             <div class="img-wrap">
-              <img src="../assets/mvCover.jpg" alt="" />
+              <img src="../assets/mvCover.jpg" alt />
               <span class="iconfont icon-play"></span>
               <div class="num-wrap">
                 <div class="iconfont icon-play"></div>
@@ -171,7 +170,7 @@
           </div>
           <div class="item">
             <div class="img-wrap">
-              <img src="../assets/mvCover.jpg" alt="" />
+              <img src="../assets/mvCover.jpg" alt />
               <span class="iconfont icon-play"></span>
               <div class="num-wrap">
                 <div class="iconfont icon-play"></div>
@@ -192,16 +191,14 @@
 
 <script>
 export default {
-  name: 'result',
+  name: "result",
   data() {
     return {
-      activeIndex: 'songs',
- 
+      activeIndex: "songs"
     };
   }
 };
 </script>
 
 <style >
-
 </style>

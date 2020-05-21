@@ -18,6 +18,8 @@
           autocomplete="off"
           placeholder="搜索"
           class="el-input__inner"
+          @keyup.enter="result"
+          v-model="inputValue"
         />
         <span class="el-input__prefix">
           <i class="el-input__icon el-icon-search"></i>
@@ -28,14 +30,23 @@
 </template>
 
 <script>
-  export default {
-    name: 'top',
-    data() {
-      return {
-        query: ''
+export default {
+  name: "top",
+  data() {
+    return {
+      inputValue: ""
+    };
+  },
+  methods: {
+    result() {
+      if (this.inputValue == "") {
+        this.$message.warning("请输入内容");
+      } else {
+        this.$router.push("/result?q=" + this.inputValue);
       }
     }
   }
+};
 </script>
 
 <style scoped></style>
