@@ -1,7 +1,7 @@
 <template>
   <div class="result-container">
     <div class="title-wrap">
-      <h2 class="title">{{ $route.query.q}}</h2>
+      <h2 class="title">{{$route.query.q}}</h2>
       <span class="sub-title">找到985个结果</span>
     </div>
     <el-tabs v-model="activeIndex">
